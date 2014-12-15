@@ -1,4 +1,93 @@
+/*
+Problem 2 – Dexter plus the Matrix
+Dexter is a super genius child but unfortunately he has to study with all the "normal" kids in his school.
+Sometimes he gets bored and starts solving his own puzzles.
+Today his teacher has given the class an assignment.
+She gave a matrix of N rows and M columns. Each cell of the matrix has a character which can either be 'a' or
+'b'.
+The teacher told the students to highlight some cells of the matrix in such a way that all the highlighted cells
+together form a plus sign.
+The plus should be made of more than one character. Its center should be at some cell on the matrix and its
+four arms should extend equally into four directions (top, bottom, left and right), parallel to the sides of the
+matrix.
+A proper plus should contain only one type of character ( 'a' or 'b' ). But the teacher is lenient. She will accept
+any plus such that all, except at most one, characters of the plus are the same ( In other words, if the number
+of characters in the plus is x, then at least x-1 of them should be same ).
+Example 1:
+If the matrix is
+a a a
+a a a
+a a a
+then one way of making a plus by highlighting is,
+a a a
+a a a
+a a a
+( Bold letters denote the plus )
+Example 2:
+If the matrix is
+a a a
+a a b
+a a a
 
+then one way of making a plus is,
+a a a
+a a b
+a a a
+As only one character of the plus is different, the teacher will accept it.
+Dexter, being the arrogant child he is, decides to prove his superiority by finding the number of
+distinct pluses he can make on the given matrix that will be accepted by the teacher.
+Note that, two pluses are different if they have a different center or they have a different arm length.
+Input:
+The first line contains a number T, the number of test cases.
+The first line of each test case contains N and M.
+Each of the next N lines contains M characters, i.e. the matrix.
+Output:
+For each test case, output the number of distinct "plus" that can be drawn on the matrix.
+Constraints:
+1 <= T <= 10
+1 <= N , M <= 1000
+All characters of the matrix are either 'a' or 'b'.
+Explanation of Sample Test Case:
+For the first two sample test cases, the only way to highlight the cells to form a plus is the one shown in the
+problem statement.
+For the third one, the following ways are possible:
+a a a a
+a a a a
+a a a a
+a a a a
+a a a a
+a a a a
+a a a a
+a a a a
+
+a a a a
+a a a a
+a a a a
+a a a a
+a a a a
+a a a a
+a a a a
+a a a a
+Sample Input
+3
+3 3
+aaa
+aaa
+aaa
+3 3
+aaa
+aab
+aaa
+4 4
+aaaa
+aaaa
+aaaa
+aaaa
+Sample Output
+1
+1
+4
+*/
 
     import java.io.InputStreamReader;
     import java.util.Arrays;
